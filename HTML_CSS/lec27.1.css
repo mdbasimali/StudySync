@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100wh;
+    background: rgb(143, 139, 225);
+    background: linear-gradient(90deg, rgba(33,31,70,1) 0%, rgba(137,137,146,1) 30%, rgba(200,233,240,1) 81%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 300px;
+    height: 500px;
+    background-color: azure;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    box-shadow: 2px 2px 40px ;
+
+}
+.rightBox img{
+    height: 100%;
+    border-radius: 10px;
+    
+    
+}
+.heading{
+    font-weight: bold;
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.paragraph{
+     font-size: 1.5em;
+}
+
+.rightBox:hover{
+    transform: scale(1.1);
+}
+.rightBox{
+    position:relative;
+    overflow: hidden;
+    transition: all 0.3s linear 0s ;
+    box-shadow: 1px 1px 10px black;
+    
+
+}
+ .rightBox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(23, 22, 22, 0.735);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s linear 0s;
+    cursor: pointer;
+    opacity: 0;
+}
+.rightBox:hover .overlay{
+    opacity: 1;
+}
+.rightBox{
+    color: azure;
+    font-size: 1.2rem;
+    /* transform: scale(1.1); */
+}
+

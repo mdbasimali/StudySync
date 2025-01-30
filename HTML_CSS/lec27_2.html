@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(90deg, rgba(33,31,70,1) 0%, rgba(137,137,146,1) 30%, rgba(200,233,240,1) 81%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 400px;
+            height: 600px;
+            /* background-color: white; */
+            /* 
+            background: linear-gradient(132deg, rgb(227, 244, 253) 0.00%, rgb(170, 209, 226) 100.00%); */
+            background: linear-gradient(132deg, rgb(34, 181, 254) 0.00%, rgb(255, 186, 214) 100.00%);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            overflow: hidden;
+            box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
+        }
+
+        .card embed {
+            width: 100%;
+            height: 30%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .textBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            width: 85%;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .textBox h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .textBox p {
+            font-size: 16px;
+            color: #666;
+        }
+        #amountBox{
+            width: 80%;
+            height: 10%;
+            background: rgb(146,164,252);
+            background: radial-gradient(circle, rgba(146,164,252,1) 9%, rgba(214,171,191,1) 82%);
+            border-radius: 20px;
+            display: flex;
+            justify-content:space-between ;
+            align-items: center;
+            padding-right: 20px;
+            /* padding-left:0px; */
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+        #leftBox{
+          /* width: fit-content; */
+          height: 100%;
+          display: flex;
+          gap: 15px;
+          align-items: center;
+        }
+        .imgBox embed{
+          height: 2.5rem;
+          width: 2.5rem;
+          width: 50px;
+          position: absolute;
+          align-items: center;
+          justify-content: center;
+          background-image: url(shopping-cart.gif);
+          background-color: rgb(227, 242, 242);
+          mix-blend-mode: color-burn;
+        }
+        #paymentButton {
+            width: 80%;
+            height: 9%;
+            background-color: rgb(12, 33, 81);
+            border-radius: 10px;
+            box-shadow: 0 29px 52px rgba(0,0,0,0.40), 0 25px 16px rgba(0,0,0,0.20);
+            cursor: pointer;
+        }
+        #paymentButton a{
+            text-decoration: none;
+            color: azure;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .cancelBox a{
+            text-decoration: none;
+            color: rgb(56, 54, 54);
+            font-weight: bold;
+            font-size: large;
+        }
+        #textAmountBox{
+            position:relative; 
+            padding-left: 70px;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: bold;
+            
+        }
+        @media(min-width:700px)  {
+            .container{
+                flex-direction: row;
+            }
+            
+        }
+        @media(max-width:700px){
+            .container{
+                flex-direction: column;
+            }
+        }
+        
+      
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <!-- Embed a video with autoplay and muted for better control -->
+            <embed src="https://lottie.host/embed/686c1123-2125-463b-83e9-e19d8e71bdeb/jOuhgFRPdM.lottie"></video>
+            <div class="textBox">
+                <h2>Order Summary</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, vero!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione corrupti eligendi dicta laborum at sit atque non optio iste excepturi!
+                </p>
+               
+            </div>
+            <div id="amountBox">
+                <div id="leftBOx">
+
+                  <div class="imgBox">
+                    <embed src="shopping-cart.gif" alt="">
+                  </div>
+                  <div id="textAmountBox">
+                    <p>Amount Plan</p>
+                    <p>$1/year</p>
+
+                  </div>
+                </div>
+
+                <div class="rightBox">
+                    <a href="#">Change</a>
+
+                </div>
+
+
+            </div>
+            <button id="paymentButton">
+                <a href="https://getupilink.com/upi/9064141315-2@ybl?am=100">Proced To payment</a>
+
+            </button>
+
+            <div class="cancelBox">
+                <a href="#">Cancel Order</a>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
